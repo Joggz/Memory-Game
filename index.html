@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Board Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+</head>
+<body>
+        <div class="container">
+                <header>
+                    <h1 class="text">MEMORY GAME</h1>
+                </header>
+        
+                <section class="score-board">
+                    <div class="star-move">
+                            <ul class="stars">
+                                    <li class="star"><i class="fa fa-star" ></i></li>
+                                    <li class="star"><i class="fa fa-star"></i></li>
+                                    <li class="star"><i class="fa fa-star"></i></li>
+                                </ul>
+                    
+                                <div class="moves"><span>0</span> Move(s)</div>
+                    </div>
+                    
+                    <div class="time">
+                        <d class="min"> <span> 00 </span> min(s) 
+                        <span class="sec"> <span>00 </span>  sec(s)</span>
+                      </div>
+                        <div class="reset">
+                                <i class="fa fa-repeat"></i>
+                        </div>
+                    </div>   
+                </section>
+        </div>
+    <div id="memory_board"></div>
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Congratulation </h2>
+        <a href="#" class="close">x</a>
+        <div class="content_1">
+          Congratulations you are a winner......
+        </div>
+        <div class="content_2">
+          <p>You made <span id="finalMove"></span>moves </p>
+          <p>in <span id="totalTime"></span></p>
+          <p>Rating <span id="starRating"></span></p>git 
+        </div>
+        <button id="play-again" onclick="playAgain()">
+         Play Again
+        </button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+<script> newBoard();</script>
+</body>
+</html>
