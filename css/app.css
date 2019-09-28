@@ -1,13 +1,17 @@
 .text {
     text-align: center;
+    font-weight: 700;
+    font-family: Raleway, sans-serif;
+    font-size: 30px;
   }
   body {
     font-family: Raleway;
   }
   .score-board {
     display: flex;
-    width: 75%;
+    width: 45%;
     margin: 0 auto;
+    /* background: green; */
   }
   .score-board .stars {
     display: flex;
@@ -18,8 +22,8 @@
   }
   .score-board .star-move {
     display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
+    /* flex-grow: 1; */
+    /* justify-content: space-around; */
   }
   .score-board .time {
     display: flex;
@@ -33,7 +37,7 @@ div#memory_board {
     width: 600px;
     height:540px;
     padding: 24px;
-    margin: 0 auto;
+    margin: 25px auto;
     box-shadow: 10px 10px 10px 10px black;
 }
 
@@ -131,4 +135,39 @@ div#memory_board > div {
     color: #ffffff;
     border-radius: 6px;
     cursor: pointer;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+   .container {
+   
+   
+   }
+   .score-board {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    /* background: green; */
+  }
+
+   div#memory_board {     
+     width: 75%;
+     height: 350px;
+     margin: 10px auto;
+     overflow-x: hidden;
+     box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+   }
+
+   div#memory_board > div {
+    background: url('https://images.unsplash.com/photo-1541233349642-6e425fe6190e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80') no-repeat;
+    border: #000 1px solid;
+    width: 6.57%;
+    height: 6%;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;  
+    margin-top: 10%;
+    text-align: center;
+}
 }

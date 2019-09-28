@@ -16,15 +16,12 @@
                 </header>
         
                 <section class="score-board">
-                    <div class="star-move">
-                            <ul class="stars">
-                                    <li class="star"><i class="fa fa-star" ></i></li>
-                                    <li class="star"><i class="fa fa-star"></i></li>
-                                    <li class="star"><i class="fa fa-star"></i></li>
-                                </ul>
-                    
-                                <div class="moves"><span>0</span> Move(s)</div>
+                     <div class="star-move stars">             
+                        <span class="star"><i class="fa fa-star" ></i></span>
+                        <span class="star"><i class="fa fa-star"></i></span>
+                        <span class="star"><i class="fa fa-star"></i></span>     
                     </div>
+                    <div class="moves"><span> 0</span> Move(s)</div>
                     
                     <div class="time">
                         <d class="min"> <span> 00 </span> min(s) 
@@ -32,8 +29,7 @@
                       </div>
                         <div class="reset">
                                 <i class="fa fa-repeat"></i>
-                        </div>
-                    </div>   
+                        </div>                    
                 </section>
         </div>
     <div id="memory_board"></div>
@@ -47,7 +43,7 @@
         <div class="content_2">
           <p>You made <span id="finalMove"></span>moves </p>
           <p>in <span id="totalTime"></span></p>
-          <p>Rating <span id="starRating"></span></p>git 
+          <p>Rating <span id="starRating"></span></p>
         </div>
         <button id="play-again" onclick="playAgain()">
          Play Again
